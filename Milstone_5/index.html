@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shareable resume builder</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <span class="border-line"></span>
+      <form id="resume-form">
+        <h2>Shareable resume builder From</h2>
+        <!-- personal information section -->
+        <div class="section">
+          <h3>Personal Information</h3>
+          <div class="inputBox">
+            <input id="username" type="text" required />
+            <span>Username</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input id="fullName" type="text" required />
+            <span>Full Name</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input id="email" type="email" required />
+            <span>Email</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input id="phone" type="tel" required />
+            <span>Contact Number</span>
+            <i></i>
+          </div>
+        </div>
+        <!-- education section -->
+        <div class="section">
+          <h3>Education</h3>
+          <div class="inputBox">
+            <input id="degree" type="text" required />
+            <span>Degree</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input id="institution-name" type="text" required />
+            <span>Institution Name</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input id="year" type="text" required />
+            <span>Year of Graduation</span>
+            <i></i>
+          </div>
+        </div>
+        <!-- Experience section -->
+        <div class="section">
+          <h3>Experience</h3>
+          <div class="inputBox">
+            <input id="title" type="text" placeholder="-" />
+            <span>Job Title</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input id="company" type="text" placeholder="-"/>
+            <span>Company</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input id="years" type="text" placeholder="-" />
+            <span>Years of Experience</span>
+            <i></i>
+          </div>
+        </div>
+        <!-- skills section -->
+        <div class="section">
+          <h3>Skills</h3>
+          <div class="inputBox">
+            <input id="skill-1" type="text" placeholder="-" />
+            <span>Skill 1</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input id="skill-2" type="text" placeholder="-" />
+            <span>Skill 2</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input id="skill-3" type="text" placeholder="-" />
+            <span>Skill 3</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input id="skill-4" type="text" placeholder="-" />
+            <span>Skill 4</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input id="skill-5" type="text" placeholder="-" />
+            <span>Skill 5</span>
+            <i></i>
+          </div>
+        </div>
+        <input id="submit" type="submit" value="Generated Resume" />
+        <div id="shareable-link-container">
+          <h2>Shareable link</h2>
+  <p>Here is your exclusive link to access or modify your resume:</p>
+  <a href="#" id="shareable-link" target="_blank">areesha.com/resume.com</a> <br>
+  <br>
+  <button id="download-pdf"><b>Download as PDF</b></button>
+         </div>
+      </form>
+      <br />
+      <!-- Dynamic and Editable resume -->
+      <div id="resume-display" contenteditable="true">
+        <!-- Resume will be generated below -->
+      </div>
+      <br>
+      <!-- section for the shareable link and download option -->
+     
+    <script src="script.js"></script>
+  </body>
+</html>
